@@ -17,8 +17,8 @@ Where `pid` is the process ID to take the histogram of, `dir` is a common direct
 ##### (optional) Start Elasticsearch and Kibana in docker
 
 ```bash
-docker run -d --name es6 -p 9200:9200 docker.elastic.co/elasticsearch/elasticsearch:6.7.1
-docker run -d --name kib6 --link es6:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.2
+> docker run -d --name es6 -p 9200:9200 docker.elastic.co/elasticsearch/elasticsearch:6.7.2
+> docker run -d --name kib6 --link es6:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.2
 ```
 
 Kibana should now be running at http://localhost:5601
